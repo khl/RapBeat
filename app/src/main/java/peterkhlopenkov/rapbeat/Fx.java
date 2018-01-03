@@ -74,10 +74,10 @@ public class Fx extends AppCompatActivity {
     }
 
     @Override
-    protected void onStop() {
+    protected void onDestroy() {
         unregisterReceiver(receiver_updateUI);
         unbindService(connection);
-        super.onStop();
+        super.onDestroy();
     }
 }
 
