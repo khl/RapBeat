@@ -43,8 +43,8 @@ public class RapBeat extends Service {
                 //retrieve saved configuration
                 SharedPreferences sharedPref = getSharedPreferences("savedConfiguration", Context.MODE_PRIVATE);
                 for (int i = 0; i < getResources().getInteger(R.integer.numberOfInstruments); i++) {
-                    sample[i] = sharedPref.getInt("sample" + i, 0);
-                    pattern[i] = sharedPref.getInt("pattern" + i, 0);
+                    sample[i] = sharedPref.getInt("sample" + i, 2);
+                    pattern[i] = sharedPref.getInt("pattern" + i, 2);
                     mute[i] = sharedPref.getBoolean("mute" + i, false);
                 }
                 bpm = sharedPref.getInt("bpm",80);
