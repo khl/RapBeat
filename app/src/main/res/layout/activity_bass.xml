@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bass"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="peterkhlopenkov.rapbeat.Bass"
+    android:orientation="vertical"
+    android:weightSum="5.75">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="5"
+        android:background="#335d7e"
+        android:layout_weight="5">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000">
+
+            <Button
+                android:text="Bass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Bass"
+                android:background="@drawable/bass_button"
+                android:fontFamily="sans-serif-condensed"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:includeFontPadding="false"
+                android:textStyle="normal|bold"
+                android:textColor="#ffffff"
+                android:textSize="100dp"
+                android:onClick="mute_bass"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/samples_background"
+            android:id="@+id/samples">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bass_samples">
+
+                <RadioButton
+                    android:text="808"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eight"
+                    android:textSize="50dp"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/background_radiobutton"
+                    android:button="@null"
+                    android:gravity="center_vertical|end"
+                    android:textStyle="normal|bold"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:onClick="sample_select"/>
+
+                <RadioButton
+                    android:text="808 #2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eight_2"
+                    android:textSize="50dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/background_radiobutton"
+                    android:button="@null"
+                    android:textStyle="normal|bold"
+                    android:gravity="center_vertical|end"
+                    android:onClick="sample_select"/>
+
+                <RadioButton
+                    android:text="Clean"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/clean"
+                    android:textSize="50dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/background_radiobutton"
+                    android:button="@null"
+                    android:textStyle="normal|bold"
+                    android:gravity="center_vertical|end"
+                    android:onClick="sample_select"/>
+
+                <RadioButton
+                    android:text="Slap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/slap"
+                    android:textSize="50dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/background_radiobutton"
+                    android:button="@null"
+                    android:textStyle="normal|bold"
+                    android:gravity="center_vertical|end"
+                    android:onClick="sample_select"/>
+                <RadioButton
+                    android:text="Squeeze"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/squeeze"
+                    android:textSize="50dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/background_radiobutton"
+                    android:button="@null"
+                    android:textStyle="normal|bold"
+                    android:gravity="center_vertical|end"
+                    android:onClick="sample_select"/>
+
+            </RadioGroup>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/patterns_background"
+            android:id="@+id/patterns">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bass_patterns">
+
+                <RadioButton
+                    android:text="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pattern1"
+                    android:textSize="50dp"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/background_radiobutton"
+                    android:button="@null"
+                    android:textStyle="normal|bold"
+                    android:textColor="#ffffff"
+                    android:onClick="pattern_select"
+                    android:textAlignment="center" />
+
+                <RadioButton
+                    android:text="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pattern2"
+                    android:textSize="50dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/background_radiobutton"
+                    android:button="@null"
+                    android:textStyle="normal|bold"
+                    android:onClick="pattern_select"
+                    android:textAlignment="center" />
+
+                <RadioButton
+                    android:text="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pattern3"
+                    android:textSize="50dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/background_radiobutton"
+                    android:button="@null"
+                    android:textStyle="normal|bold"
+                    android:onClick="pattern_select"
+                    android:textAlignment="center" />
+
+                <RadioButton
+                    android:text="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pattern4"
+                    android:textSize="50dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/background_radiobutton"
+                    android:button="@null"
+                    android:textStyle="normal|bold"
+                    android:onClick="pattern_select"
+                    android:textAlignment="center" />
+
+                <RadioButton
+                    android:text="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pattern5"
+                    android:textSize="50dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/background_radiobutton"
+                    android:button="@null"
+                    android:textStyle="normal|bold"
+                    android:onClick="pattern_select"
+                    android:textAlignment="center" />
+
+            </RadioGroup>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:name="peterkhlopenkov.rapbeat.BottomSectionFragment"
+        android:id="@+id/fragment"
+        tools:layout="@layout/bottom_section_fragment"
+        android:layout_weight="0.75" />
+
+</LinearLayout>

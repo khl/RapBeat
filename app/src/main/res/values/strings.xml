@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RapBeat</string>
+    <string name="kick">Kick</string>
+    <string name="snare">Snare</string>
+    <string name="perc">Perc.</string>
+    <string name="chord">Chord</string>
+    <string name="bass">Bass</string>
+    <string name="fx">Fx</string>
+</resources>
